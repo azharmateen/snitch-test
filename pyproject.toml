@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snitch-test"
+version = "1.0.0"
+description = "Security tool that tests if dependencies are stealing environment variables"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "docker>=7.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+snitch-test = "snitch_test.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["snitch_test*"]
