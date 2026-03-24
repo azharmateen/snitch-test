@@ -1,5 +1,8 @@
 # snitch-test
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 Security tool that tests if your project dependencies are stealing environment variables. It creates a Docker sandbox with fake (canary) credentials, installs your dependencies, and monitors for credential exfiltration.
 
 ## How It Works
